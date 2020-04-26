@@ -16,12 +16,12 @@ exit();
 
 #TODO: sa car los token de la base de datos
 $usuario = $_POST["usuario"];
-#$tokenUsu = $_POST["token"];
+$tokenUsu = $_POST["token"];
 $arraytokens = array();
 
 # Ejecutar la sentencia SQL
 mysqli_set_charset($con, 'utf8');
-$resultado = mysqli_query($con, "SELECT token FROM usuarios WHERE NOT nombre = '$usuario' AND token IS NOT NULL");
+$resultado = mysqli_query($con, "SELECT token FROM usuarios WHERE NOT nombre = '$usuario' AND NOT token = '$tokenUsu' AND token IS NOT NULL");
 
 # Comprobar si se ha ejecutado correctamente
 if (!$resultado) {
