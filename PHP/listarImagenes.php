@@ -2,7 +2,7 @@
 
 $DB_SERVER="localhost"; #la dirección del servidor
 $DB_USER="Xzmartinez015"; #el usuario para esa base de datos
-$DB_PASS="i5QU8iYFP"; #la clave para ese usuario
+$DB_PASS="?????"; #la clave para ese usuario
 $DB_DATABASE="Xzmartinez015_galeria"; #la base de datos a la que hay que conectarse
 
 # Se establece la conexión:
